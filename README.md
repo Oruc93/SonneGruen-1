@@ -1,14 +1,10 @@
-# Gatsby Tailwind Serif
+# Website Sonne und Grün
 
-A Gatsby theme based on [Gatsby Serif Theme](https://github.com/JugglerX/gatsby-serif-theme ), rewrite with [Tailwind CSS](https://tailwindcss.com/).
+## Development Setup
 
-![image-20190708222928070](./screenshots/home.png)
+run `gatsby develop`
 
+## How to deploy
+run `...`
 
-## Demo
-
-See the [Link](https://gatsby-tailwind-serif.netlify.com)
-
-
-## License
-[MIT](LICENSE)
+## How to add content
