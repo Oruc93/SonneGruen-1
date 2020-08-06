@@ -9,7 +9,7 @@ const Service = ({ title, url, children }) => {
     <div className="w-full sm:w-1/2 md:w-1/3 p-2">
       <Link
         to={url}
-        className="text-2xl text-indigo-700 hover:text-indogo-600 hover:underline"
+        className="text-2xl text-teal-700 hover:text-indogo-600 hover:underline"
       >
         {title}
       </Link>
@@ -30,7 +30,7 @@ const Services = ({ data }) => {
         style={{ backgroundImage: `url(${service_img})` }}
       >
         <div className="container w-3/4 md:w-1/2 mt-20 font-serif font-hairline self-start">
-          <h1 className="text-4xl md:text-5xl text-indigo-700 px-2">
+          <h1 className="text-4xl md:text-5xl text-teal-700 px-2">
             Services
           </h1>
         </div>

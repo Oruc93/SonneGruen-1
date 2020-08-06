@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Sonne und Grün`,
     description: ``,
-    author: `@windedge`
+    author: `Benjamin Schlotter`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -13,7 +13,7 @@ module.exports = {
         short_name: `serif`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#4dc0b5`,
+        theme_color: `#e6fffa`,
         display: `minimal-ui`,
         icon: `static/favicon.png`
       }

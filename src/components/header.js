@@ -14,7 +14,7 @@ const StyledLink = ({ className, ...props }) => {
 
 const HeaderLink = ({ className, children, ...props }) => {
   className = cx(
-    "w-full md:w-auto py-2 md:px-1 -mb-1 text-sm font-medium uppercase hover:text-indigo-500 border-transparent border-b-4 md:hover:border-indigo-600 relative",
+    "w-full md:w-auto py-2 md:px-1 -mb-1 text-sm font-medium uppercase hover:text-teal-500 border-transparent border-b-4 md:hover:border-teal-600 relative",
     className
   );
   return (
@@ -22,7 +22,7 @@ const HeaderLink = ({ className, children, ...props }) => {
       <Link
         className={className}
         {...props}
-        activeClassName="md:border-indigo-600"
+        activeClassName="md:border-teal-600"
       >
         {children}
       </Link>
@@ -36,7 +36,7 @@ const Header = ({ className, ...props }) => {
   className = cx("w-full shadow-md", className);
   return (
     <div className={className} {...props}>
-      <div className="flex flex-wrap flex-row items-start md:items-center justify-between px-6 md:px-10 lg:px-24 text-indigo-700">
+      <div className="flex flex-wrap flex-row items-start md:items-center justify-between px-6 md:px-10 lg:px-24 text-teal-700">
         <div className="my-2">
           <Link to="/">
             <div className="flex-initial text-xl font-semibold">Sonne und Grün</div>
@@ -44,7 +44,7 @@ const Header = ({ className, ...props }) => {
         </div>
 
         <button
-          className="block relative md:hidden border border-indigo-700 my-2 px-3 py-2"
+          className="block relative md:hidden border border-teal-700 my-2 px-3 py-2"
           onClick={() => toggleExpansion(!isExpanded)}
         >
           <svg

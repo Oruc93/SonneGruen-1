@@ -47,7 +47,7 @@
 }
 
 .testimonial-quote:before{
-    @apply text-indigo-700;
+    @apply text-teal-700;
     content: '\201C';
     transform: translate(-50%, -50%);
     position: absolute;

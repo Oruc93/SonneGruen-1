@@ -11,7 +11,7 @@ import SEO from "../components/seo";
 
 const StyledButton = ({ className, children, ...props }) => {
   className = cx(
-    "py-2 px-4 bg-indigo-700 hover:bg-indigo-600 text-base text-white font-bold uppercase rounded shadow-md hover:-translate-1",
+    "py-2 px-4 bg-teal-700 hover:bg-teal-600 text-base text-white font-bold uppercase rounded shadow-md hover:-translate-1",
     className
   );
   return (
@@ -26,7 +26,7 @@ const Service = ({ title, url, children }) => {
     <div className="w-full sm:w-1/2 md:w-1/3 p-2">
       <Link
         to={url}
-        className="text-2xl text-indigo-700 hover:text-indogo-600 hover:underline"
+        className="text-2xl text-teal-700 hover:text-indogo-600 hover:underline"
       >
         {title}
       </Link>
@@ -46,7 +46,7 @@ function Index({ data }) {
         style={{ backgroundImage: `url(${home})` }}
       >
         <div className="w-4/5 md:w-3/4 lg:w-7/12 mt-20 font-serif font-hairline self-start">
-          <h1 className="text-3xl md:text-5xl text-indigo-700 leading-tight">
+          <h1 className="text-3xl md:text-5xl text-teal-700 leading-tight">
             Sonne und Grün
           </h1>
           <p className="text-base">
