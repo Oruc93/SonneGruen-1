@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Sonne und Grün`,
-    description: ``,
+    description: `Homepage for Sonne und Grün UG`,
     author: `Benjamin Schlotter`
   },
   plugins: [
@@ -9,8 +9,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-tailwind--serif`,
-        short_name: `serif`,
+        name: `Sonne und Grün`,
+        short_name: `Sonne und Grün`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#e6fffa`,
