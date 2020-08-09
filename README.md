@@ -1,6 +1,8 @@
 # Website Sonne und Grün
 
 ## Development Setup
+run `yarn install`
+
 Install dependencies:
 - gatsby-plugin-offline
 gatsby-plugin-react-helmet react-helmet
