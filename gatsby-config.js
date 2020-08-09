@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/SonneGruen",
   siteMetadata: {
     title: `Sonne und Grün`,
     description: `Homepage for Sonne und Grün UG`,
