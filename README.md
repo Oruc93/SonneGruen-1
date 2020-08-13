@@ -1,6 +1,10 @@
 # Website Sonne und Grün
 
 ## Development Setup
+Install nodejs and npm for your operating system. More infos at: https://www.gatsbyjs.com/tutorial/part-zero/
+Install the yarn package manager: `npm install -g yarn`
+Install gatsby: `yarn global add gatsby-cli`
+
 Install all development dependencies by running `yarn install`. If you introduce new dependencies do it by running `yarn add <new_dep>`
 
 Run the development server `gatsby develop`. The website is then accessible at `http://localhost:8000/`. After each change the website will be recompiled in the background.
