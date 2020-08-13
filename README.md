@@ -1,39 +1,45 @@
 # Website Sonne und Grün
 
 ## Development Setup
-run `yarn install`
+Install all development dependencies by running `yarn install`. If you introduce new dependencies do it by running `yarn add <new_dep>`
 
-Install dependencies:
-- gatsby-plugin-offline
-gatsby-plugin-react-helmet react-helmet
-gh-pages
+Run the development server `gatsby develop`. The website is then accessible at `http://localhost:8000/`. After each change the website will be recompiled in the background.
 
-run `gatsby develop`
+## Development Error handling:
+`fatal: A branch named 'gh-pages' already exists.`
 
-## Setup deploy (one time only)
-### Setup github pages (maybe not need later)
+remove node_modules/.cache/gh-pages
+
+----------------------------------
+
+## Setup deploy
+This must be done once. 
+### Setup github pages
+For now the Website is deployed to github pages. The setup was done like this:
 - create and push new branch `gh-pages`
-- got to repo settings and select the `gh-pages` branch as source
+- In gitlab got to repo settings and select the `gh-pages` branch as source for the github pages feature.
 
 ### Setup Travis CI
-The repo must be public.
+Travis CI is used to compile the website and push the result it in the correct branch.
+
+The repo must be public!
 - got to https://github.com/marketplace/travis-ci
 - select Open Source and the repository you want to set it up with
 - login to https://travis-ci.com with your github account
 - go to the travis ci settings for the repo
-- add a github personal access token as environment variable
-- add the environment variable to package.json in the deploy call
+- add a github personal access token as environment variable. Call the variable: CI_TOKEN
+- this variable will be used by travis ci to access the repository
 
 The travis ci integration can be deleted by removing it in the Github Settings: https://github.com/settings/installations/
 
+----------------------------------
+
 ## How to deploy
-run `gatsby build`
-https://www.gatsbyjs.org/docs/how-gatsby-works-with-github-pages
-deploy to github pages like described here: https://www.gatsbyjs.org/docs/how-gatsby-works-with-github-pages
+The deployment is setup according to the guide found at https://www.gatsbyjs.org/docs/how-gatsby-works-with-github-pages
+
+For now the deployment happens after each push to the develop branch. If you wish to develop and push your changes to a different branch.
+
+> NOTE: DO NOT MODIFIY THE gh-pages BRANCH!!!
 
 ## How to add content
-
-## Error handling:
-`fatal: A branch named 'gh-pages' already exists.`
-
-remove node_modules/.cache/gh-pages
+TODO
