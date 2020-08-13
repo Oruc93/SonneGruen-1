@@ -42,7 +42,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public -r https://d9574520689114660775137f4e726dd57be23848@github.com/BenjiSchlotter/SonneGruen.git"
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -r https://CI_TOKEN@github.com/BenjiSchlotter/SonneGruen.git"
   },
   "devDependencies": {
     "babel-eslint": "10.0.2",
