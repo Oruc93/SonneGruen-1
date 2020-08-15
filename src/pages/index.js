@@ -1,16 +1,12 @@
 import React from "react";
 import cx from "classnames";
-import home from "../images/undraw_taking_notes_tjaf.svg";
-import branding from "../images/noun_branding_1885335.svg";
-import processing from "../images/noun_The Process_1885341.svg";
-import modeling from "../images/noun_3d modeling_1885342.svg";
-import { Helmet } from "react-helmet";
+import home from "../images/home.svg";
 import { Link, graphql } from "gatsby";
 import Layout from "../components/layout";
 
 const StyledButton = ({ className, children, ...props }) => {
   className = cx(
-    "py-2 px-4 bg-teal-700 hover:bg-teal-600 text-base text-white font-bold uppercase rounded shadow-md hover:-translate-1",
+    "py-2 px-4 bg-my_color-700 hover:bg-my_color-600 text-base text-white font-bold uppercase rounded shadow-md hover:-translate-1",
     className
   );
   return (
@@ -25,7 +21,7 @@ const Service = ({ title, url, children }) => {
     <div className="w-full sm:w-1/2 md:w-1/3 p-2">
       <Link
         to={url}
-        className="text-2xl text-teal-700 hover:text-indogo-600 hover:underline"
+        className="text-2xl text-my_color-700 hover:text-my_color-600 hover:underline"
       >
         {title}
       </Link>
@@ -44,7 +40,7 @@ function Index({ data }) {
         style={{ backgroundImage: `url(${home})` }}
       >
         <div className="w-4/5 md:w-3/4 lg:w-7/12 mt-20 font-serif font-hairline self-start">
-          <h1 className="text-3xl md:text-5xl text-teal-700 leading-tight">
+          <h1 className="text-3xl md:text-5xl text-my_color-700 leading-tight">
             Sonne und Grün
           </h1>
           <p className="text-base">
