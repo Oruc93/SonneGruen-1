@@ -60,7 +60,7 @@ const Team = ({data}) => {
               title={jobtitle}
               url={linkedinurl}
               email={email}
-              image={withPrefix(image)}
+              image={image}
               key={path}
             >
               {node.excerpt}
