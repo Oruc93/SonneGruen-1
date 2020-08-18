@@ -2,15 +2,6 @@ import React, { useState } from "react";
 import { Link } from "gatsby";
 import cx from "classnames";
 
-const StyledLink = ({ className, ...props }) => {
-  className = cx(className);
-  return (
-    <Link className={className} {...props}>
-      {props.children}
-    </Link>
-  );
-};
-
 const HeaderLink = ({ className, children, ...props }) => {
   className = cx(
     "w-full md:w-auto py-2 md:px-1 -mb-1 text-sm font-medium uppercase hover:text-teal-500 border-transparent border-b-4 md:hover:border-my_color-600 relative",

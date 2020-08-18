@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, withPrefix, graphql } from "gatsby";
+import { withPrefix, graphql } from "gatsby";
 import Layout from "../components/layout";
 import team from "../images/team.svg";
 
