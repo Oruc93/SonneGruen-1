@@ -1,4 +1,5 @@
 # Website Sonne und Grün
+Visit the demo Website at: https://benjischlotter.github.io/SonneGruen/
 
 ## Development Setup
 Install nodejs and npm for your operating system. More infos at: https://www.gatsbyjs.com/tutorial/part-zero/  
@@ -8,6 +9,9 @@ Install gatsby: `yarn global add gatsby-cli`
 Install all development dependencies by running `yarn install`. If you introduce new dependencies do it by running `yarn add <new_dep>`
 
 Run the development server `gatsby develop`. The website is then accessible at `http://localhost:8000/`. After each change the website will be recompiled in the background.
+
+## Development Notes
+- Color scheme: https://coolors.co/287b65-a0e8af-86baa1-edead0-ffcf56
 
 ## Development Error handling:
 `fatal: A branch named 'gh-pages' already exists.`
@@ -46,4 +50,11 @@ For now the deployment happens after each push to the develop branch. If you wis
 > NOTE: DO NOT MODIFIY THE gh-pages BRANCH!!!
 
 ## How to add content
-TODO
+Content is created in markdown pages. For example the different services are described in separate markdown files inside the content/services subdirectory.
+The part between the tripple dashes is called frontmatter and is the meta data of this content. For example in `services.js` the date field from the frontmatter is used to sort the content.
+
+More infos about the frontmatter in markdown files: https://www.gatsbyjs.com/docs/adding-markdown-pages/#frontmatter-for-metadata-in-markdown-files
+
+The rest of the markdown file is rendered as html.
+
+Querying the data is done via graphql. More on that: https://www.gatsbyjs.com/docs/page-query/
