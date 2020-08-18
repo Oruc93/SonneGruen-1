@@ -31,17 +31,10 @@
   ],
   "license": "MIT",
   "scripts": {
-    "analyze:lint": "eslint --ext .jsx --ext .js .",
-    "analyze:prettier": "prettier --list-different '**/*.{js,css,md,json}'",
-    "analyze": "npm run analyze:lint && npm run analyze:prettier",
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "fix:lint": "eslint --ext .jsx --ext .js . --fix",
-    "fix:prettier": "prettier --write '**/*.{js,css,md,json}'",
-    "fix": "npm run fix:lint && npm run fix:prettier",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public -r https://$CI_TOKEN@github.com/BenjiSchlotter/SonneGruen.git"
   },
   "devDependencies": {
@@ -56,19 +49,5 @@
     "prettier": "2.0.5",
     "tailwindcss": "1.4.6",
     "tailwindcss-transforms": "^2.1.0"
-  },
-  "Repository": {
-    "type": "git",
-    "url": "https://github.com/windedge/gatsby-tailwind-serif"
-  },
-  "bugs": {
-    "url": "https://github.com/windedge/gatsby-tailwind-serif/issues"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "resolutions": {
-    "terser": "4.0.0",
-    "terser-webpack-plugin/terser": "4.0.0"
   }
 }
