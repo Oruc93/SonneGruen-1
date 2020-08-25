@@ -28,7 +28,7 @@ const Services = ({ data }) => {
       >
         <div className="container w-3/4 md:w-1/2 mt-20 font-serif font-hairline self-start">
           <h1 className="text-4xl md:text-5xl text-my_color-700 px-2">
-            Services
+            Dienstleistungen
           </h1>
         </div>
 

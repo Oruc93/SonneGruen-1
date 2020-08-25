@@ -53,9 +53,9 @@ const Header = ({ className, ...props }) => {
           } w-full md:w-auto flex md:flex flex-col md:flex-row justify-center md:justify-end items-stretch md:items-center py-1`}
         >
           <HeaderLink to="/">Home</HeaderLink>
-          <HeaderLink to="/services">Services</HeaderLink>
+          <HeaderLink to="/services">Dienstleistungen</HeaderLink>
           <HeaderLink to="/team">Team</HeaderLink>
-          <HeaderLink to="/contact">Contact</HeaderLink>
+          <HeaderLink to="/contact">Kontakt</HeaderLink>
         </div>
       </div>
     </div>

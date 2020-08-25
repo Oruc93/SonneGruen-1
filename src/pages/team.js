@@ -43,11 +43,12 @@ const Team = ({data}) => {
       >
         <div className="container w-3/4 md:w-1/2 mt-20 font-serif font-hairline self-start">
           <h1 className="text-3xl md:text-5xl text-my_color-700 leading-tight">
-            Meet The Team
+            Wer wir sind
           </h1>
           <p className="text-base">
-            Our team of qualified accountants and financial consultants can help
-            your business at any stage of it’s growth.
+          Unser Familienbetrieb ist seit 1994 im Garten- und Landschaftsbau erflogreich tätig und zeichnet sich durch Zuverlässigkeit,
+          Flexibilität und Qualität aus. Die Bandbreite unserer Dienste hat sich über die Jahre erweitert und wird stetig weiter entwickelt. 
+          In dieser Tradition begegnen wir neuen Herausforderungen mit Mut und sind innovativen Ideen gegenüber aufgeschlossen.
           </p>
         </div>
 
